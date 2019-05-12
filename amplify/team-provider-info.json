@@ -9,6 +9,11 @@
             "UnauthRoleName": "appsync-demo-dev-20190511155451-unauthRole",
             "StackName": "appsync-demo-dev-20190511155451",
             "StackId": "arn:aws:cloudformation:ap-southeast-2:486129879193:stack/appsync-demo-dev-20190511155451/4b797f10-73b1-11e9-a6a0-02f560c2a68c"
+        },
+        "categories": {
+            "auth": {
+                "cognito87f312cb": {}
+            }
         }
     }
 }

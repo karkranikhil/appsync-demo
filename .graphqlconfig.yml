@@ -1,5 +1,5 @@
 projects:
-  Auction:
+  AuthAuction:
     schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.js
