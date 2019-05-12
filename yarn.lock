@@ -2022,6 +2022,13 @@ aws-amplify@^1.1.27:
     "@aws-amplify/ui" "^1.0.19"
     "@aws-amplify/xr" "^0.1.16"
 
+aws-appsync-react@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/aws-appsync-react/-/aws-appsync-react-1.2.7.tgz#c316e1a2ed510d10329f50828d55a985483368fc"
+  integrity sha512-uFPih4OIlw48y0SKFgk8G4PRSd61503P+bjeb1eUKS4Nt2NPBLMUqB1gQxZTbHw24XOxhCh+0p3rZMowDWgKVw==
+  dependencies:
+    prop-types "^15.6.0"
+
 aws-sdk@2.329.0:
   version "2.329.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.329.0.tgz#616da7ca5e1909e53333148694990e068272150f"
