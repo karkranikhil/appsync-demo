@@ -11,7 +11,7 @@ export const AuctionCard = ({name, price}) =>{
     <Card>
       <CardContent>
         <Typography>{name}</Typography>
-        <Typography>{price}</Typography>
+        <Typography>${price}</Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Bid</Button>

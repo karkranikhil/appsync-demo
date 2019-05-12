@@ -11,6 +11,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 const client = new AWSAppSyncClient({
+    disableOffline:true,
     url: AppSyncConfig.aws_appsync_graphqlEndpoint,
     region: AppSyncConfig.aws_appsync_region,
     auth: {

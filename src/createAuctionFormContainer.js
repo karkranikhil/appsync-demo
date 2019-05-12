@@ -5,7 +5,9 @@ import Button from '@material-ui/core/Button';
 import { Query, Mutation } from "react-apollo";
 import gql from "graphql-tag";
 import {createAuction} from './graphql/mutations'
+import {listAuctions} from './graphql/queries'
 import { CreateAuctionForm } from './createAuctionForm';
+import { GraphQLString } from 'graphql';
 const initialState={
     name: "",
     price: 0
@@ -26,6 +28,12 @@ const initialState={
                 price
             }
         }
+        // refetchQueries:[
+        //     {
+        //         query:gql(listAuctions),
+        //          variables:{limit:100}
+        //     }
+        // ]
       }).then(res => {
         console.log(res)
         setInputs({...inputs,...initialState})
@@ -33,7 +41,7 @@ const initialState={
    }
     return(
         <Mutation mutation={gql(createAuction)}>
-        {(createAuction, { data, loading, error }) => {
+        {(createAuction, { loading, error }) => {
             if (loading) {
                 return <p>Loading ...</p>;
               }
@@ -54,3 +62,5 @@ const initialState={
 
 
 export default CreateAuctionFormContainer
+
+
